@@ -89,3 +89,43 @@ body {
 .container {
     zoom: 1;
 }
+
+:root {
+    --cor-texto: #FFFFFF;
+}
+
+body {
+    background: black;
+}
+
+.menu_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu_container li a {
+    display: block;
+}
+
+.menu_container a {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--cor-texto);
+    padding: 10px 20px;
+}
+
+.menu_container a:hover {
+    background: #D89216;
+    color: black;
+}
+
+.img_bannerhome {
+    position: absolute;
+}
+
+.descricao_texto {
+    color: var(--cor-texto);
+    position: relative;
+    width: 50%;
+    background: hotpink;
+}
