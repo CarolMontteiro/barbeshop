@@ -91,11 +91,19 @@ body {
 }
 
 :root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #D89216;
     --cor-texto: #FFFFFF;
+    --font-principal: 'inter';
 }
 
 body {
-    background: black;
+    background: var(--cor-primaria);
+    font-family: var(--font-principal);
+}
+
+#menu {
+    border-bottom: 2px solid var(--cor-secundaria);
 }
 
 .menu_container {
@@ -110,22 +118,33 @@ body {
 .menu_container a {
     font-size: 25px;
     font-weight: bold;
+    text-transform: uppercase;
     color: var(--cor-texto);
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 .menu_container a:hover {
-    background: #D89216;
-    color: black;
+    background: var(--cor-secundaria);
+    color: var(--cor-primaria);
 }
 
-.img_bannerhome {
-    position: absolute;
+#home .container {
+    height: 100vh;
 }
 
-.descricao_texto {
+#home .container img {
+    width: 100%;
+    padding-top: 25px;
+}
+
+#home .container strong {
+    color: var(--cor-secundaria);
+}
+
+#home .container h1 {
     color: var(--cor-texto);
-    position: relative;
-    width: 50%;
-    background: hotpink;
+    padding: 30px 20px;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.2;
 }
