@@ -92,7 +92,7 @@ body {
 
 :root {
     --cor-primaria: #000000;
-    --cor-secundaria: #D89216;
+    --cor-secundaria: #FFA700;
     --cor-texto: #FFFFFF;
     --font-principal: 'inter';
 }
@@ -141,9 +141,36 @@ body {
     color: var(--cor-primaria);
 }
 
+#home .container {
+    margin-top: 20px;
+}
+
+#home .container img {
+    width: 100%;
+}
+
+.agenda {
+    padding: 130px 0;
+    text-align: center;
+    /*background: aquamarine;*/
+}
+
+.agenda a {
+    display: inline-block;
+    padding: 20px 95px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    background: var(--cor-secundaria);
+}
+
+.agenda a:hover {
+    background: var(--cor-texto);
+}
+
 #sobre .container {
     display: flex;
-    margin-top: 20px;
     background-image: url("img/fundo.jpeg");
 }
 
