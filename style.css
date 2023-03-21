@@ -91,20 +91,21 @@ body {
 }
 
 :root {
+    --cor-fundo: #35363A;
     --cor-primaria: #000000;
     --cor-secundaria: #FFA700;
-    --cor-texto: #FFFFFF;
+    --cor-terciaria: #FFFFFF;
     --font-principal: 'inter';
 }
 
 body {
-    background: var(--cor-primaria);
+    background: var(--cor-fundo);
     font-family: var(--font-principal);
 }
 
 #menu {
     width: 100%;
-
+    background: var(--cor-primaria);
     border-bottom: 2px solid var(--cor-secundaria);
 }
 
@@ -132,7 +133,7 @@ body {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    color: var(--cor-texto);
+    color: var(--cor-terciaria);
     padding: 15px 20px;
 }
 
@@ -165,7 +166,7 @@ body {
 }
 
 .agenda a:hover {
-    background: var(--cor-texto);
+    background: var(--cor-terciaria);
 }
 
 #sobre .container {
@@ -179,7 +180,7 @@ body {
 
 .descricao  {
     width: 50%;
-    color: var(--cor-texto);
+    color: var(--cor-terciaria);
     font-weight: 400;
     font-size: 20px;
     text-align: center;
@@ -208,6 +209,46 @@ body {
     text-transform: uppercase;
 }
 
-#servico {
+#servico .container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.titulo_servico {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.titulo_servico h2 {
+    font-size: 45px;
+}
+
+.titulo_servico p {
+    color: var(--cor-terciaria);
+    margin-top: 10px;
+}
+
+.servico_conteudo {
+    background-image: url("img/fundo.jpeg");
+    width: 31%;
+}
+
+.servico_conteudo:hover {
+    -webkit-box-shadow: 6px 6px 14px -5px rgba(250,247,250,1);
+    -moz-box-shadow: 6px 6px 14px -5px rgba(250,247,250,1);
+    box-shadow: 6px 6px 14px -5px rgba(250,247,250,1);
+}
+
+.servico_conteudo img {
+    width: 100%;
+    padding: 25px 60px;
+}
+
+.servico_conteudo h3 {
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--cor-terciaria);
+    font-size: 25px;
 }
