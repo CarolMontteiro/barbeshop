@@ -142,43 +142,35 @@ body {
     color: var(--cor-primaria);
 }
 
+#home {
+    background: black;
+}
+
 #home .container {
-    margin-top: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #home .container img {
     width: 100%;
 }
 
-.agenda {
-    padding: 100px 0;
-    text-align: center;
-}
-
-.agenda a {
-    display: inline-block;
-    padding: 20px 95px;
-    text-transform: uppercase;
-    border-radius: 10px;
-    font-weight: 700;
-    color: var(--cor-primaria);
-    background: var(--cor-secundaria);
-}
-
-.agenda a:hover {
-    background: var(--cor-terciaria);
+#sobre {
+    background: #E1DDDA;
 }
 
 #sobre .container {
     display: flex;
     background-image: url("img/fundo.jpeg");
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #sobre .container img {
     width: 50%;
 }
 
-.descricao  {
+.descricao {
     width: 50%;
     color: var(--cor-terciaria);
     font-weight: 400;
@@ -235,9 +227,9 @@ body {
 }
 
 .servico_conteudo:hover {
-    -webkit-box-shadow: 6px 6px 14px -5px rgba(250,247,250,1);
-    -moz-box-shadow: 6px 6px 14px -5px rgba(250,247,250,1);
-    box-shadow: 6px 6px 14px -5px rgba(250,247,250,1);
+    -webkit-box-shadow: 6px 6px 14px -5px rgba(250, 247, 250, 1);
+    -moz-box-shadow: 6px 6px 14px -5px rgba(250, 247, 250, 1);
+    box-shadow: 6px 6px 14px -5px rgba(250, 247, 250, 1);
 }
 
 .servico_conteudo img {
@@ -251,4 +243,43 @@ body {
     text-align: center;
     color: var(--cor-terciaria);
     font-size: 25px;
+}
+
+.agenda {
+    padding: 55px 0;
+    text-align: center;
+}
+
+.agenda a {
+    display: inline-block;
+    padding: 20px 95px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 700;
+    color: var(--cor-primaria);
+    background: var(--cor-secundaria);
+}
+
+.agenda a:hover {
+    background: var(--cor-terciaria);
+}
+
+
+@media (min-width: 2560px) {
+    #home .container {
+        margin: 92px auto;
+    }
+
+    #sobre {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #E1DDDA;
+        height: 80vh;
+    }
+
+    .descricao {
+        font-size: 25px;
+        padding: 25px;
+    }
 }
