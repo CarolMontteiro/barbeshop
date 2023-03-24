@@ -113,23 +113,23 @@ body {
     display: flex;
 }
 
-#menu .container img {
+#menu .logomarca {
     width: 120px;
     height: auto;
 }
 
-.menu_container {
+.menu_lista {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.menu_container li a {
+.menu_lista li a {
     display: block;
 }
 
-.menu_container a {
+.menu_lista a {
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -137,7 +137,7 @@ body {
     padding: 15px 20px;
 }
 
-.menu_container a:hover {
+.menu_lista a:hover {
     background: var(--cor-secundaria);
     color: var(--cor-primaria);
 }
@@ -147,11 +147,10 @@ body {
 }
 
 #home .container {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
-#home .container img {
+#home .banner_home {
     width: 100%;
 }
 
@@ -162,43 +161,31 @@ body {
 #sobre .container {
     display: flex;
     background-image: url("img/fundo.jpeg");
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px auto;
 }
 
 #sobre .container img {
     width: 50%;
 }
 
-.descricao {
-    width: 50%;
-    color: var(--cor-terciaria);
-    font-weight: 400;
-    font-size: 20px;
-    text-align: center;
-    padding: 60px 45px;
-    line-height: 1.2;
-}
-
-.descricao h1 {
+.descricao_sobre h1 {
     text-transform: uppercase;
     color: var(--cor-secundaria);
     margin-bottom: 25px;
 }
 
-.descricao strong {
-    color: var(--cor-secundaria);
-}
-
-.titulo_servico {
+.descricao_sobre {
+    width: 50%;
+    color: var(--cor-terciaria);
+    font-weight: 400;
+    font-size: 20px;
     text-align: center;
-    padding: 50px 0 35px 0;
+    padding: 40px 20px;
+    line-height: 1.2;
 }
 
-.titulo_servico h2 {
+.descricao_sobre strong {
     color: var(--cor-secundaria);
-    font-size: 28px;
-    text-transform: uppercase;
 }
 
 #servico .container {
@@ -207,16 +194,19 @@ body {
     gap: 2rem;
 }
 
-.titulo_servico {
+.area_titulo { /*class reutilizável*/
+    text-align: center;
     width: 100%;
     padding: 60px 0;
 }
 
-.titulo_servico h2 {
+.titulo_h2 { /*class reutilizável*/
+    color: var(--cor-secundaria);
     font-size: 45px;
+    text-transform: uppercase;
 }
 
-.titulo_servico p {
+.titulo_p { /*class reutilizável*/
     color: var(--cor-terciaria);
     margin-top: 10px;
 }
@@ -263,7 +253,6 @@ body {
 .agenda a:hover {
     background: var(--cor-terciaria);
 }
-
 
 @media (min-width: 2560px) {
     #home .container {
