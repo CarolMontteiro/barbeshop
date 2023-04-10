@@ -131,8 +131,9 @@ body {
 
 .menu_lista a {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 400;
     text-transform: uppercase;
+    text-decoration: none;
     color: var(--cor-terciaria);
     padding: 15px 20px;
 }
@@ -162,6 +163,7 @@ body {
     display: flex;
     background-image: url("img/fundo.jpeg");
     margin: 30px auto;
+    padding: 0;
 }
 
 #sobre .container img {
@@ -186,6 +188,10 @@ body {
 
 .descricao_sobre strong {
     color: var(--cor-secundaria);
+}
+
+#servico {
+    background: var(--cor-fundo);
 }
 
 #servico .container {
@@ -233,6 +239,10 @@ body {
     text-align: center;
     color: var(--cor-terciaria);
     font-size: 25px;
+}
+
+.servico_conteudo a {
+    text-decoration: none;
 }
 
 .agenda {
