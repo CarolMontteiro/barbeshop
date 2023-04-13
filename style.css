@@ -104,13 +104,11 @@ body {
 }
 
 #menu {
-    background: var(--cor-primaria);
-    border-bottom: 2px solid var(--cor-secundaria);
-}
-
-#menu .container {
     display: flex;
     justify-content: space-between;
+    padding: 0 15px;
+    background: var(--cor-primaria);
+    border-bottom: 2px solid var(--cor-secundaria);
 }
 
 #menu .logomarca {
@@ -119,7 +117,6 @@ body {
 }
 
 .menu_lista {
-    width: 100%;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -157,6 +154,10 @@ body {
 }
 
 @media (max-width: 600px) {
+    .para_mobile {
+        display: flex;
+        justify-content: space-between;
+    }
 
     #btn_mobile {
         display: block;
