@@ -110,6 +110,7 @@ body {
 
 #menu .container {
     display: flex;
+    justify-content: space-between;
 }
 
 #menu .logomarca {
@@ -120,22 +121,20 @@ body {
 .menu_lista {
     width: 100%;
     display: flex;
+    gap: 20px;
     align-items: center;
     justify-content: flex-end;
 }
 
-.menu_lista li a {
-    display: block;
-}
-
 .menu_lista a {
+    display: block;
     position: relative;
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--cor-terciaria);
-    padding: 15px 20px;
+    padding: 15px 0;
 }
 
 .menu_lista a::after {
@@ -151,6 +150,35 @@ body {
 
 .menu_lista a:hover::after {
     width: 100%;
+}
+
+#btn_mobile {
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    #btn_mobile {
+        display: block;
+    }
+
+    #menu.active .menu_lista {
+        display: block;
+    }
+
+    .menu_lista {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 123px;
+        right: 0;
+        background: black;
+    }
+
+    .menu_lista a {
+        padding: 16px 0;
+        margin: 0 16px;
+    }
 }
 
 #home {
