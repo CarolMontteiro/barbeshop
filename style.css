@@ -142,7 +142,7 @@ body {
     width: 0;
     height: 2px;
     transition: 0.4s ease-in-out;
-    background-color: var(--cor-secundaria);
+    background: var(--cor-secundaria);
 }
 
 .menu_lista a:hover::after {
@@ -154,31 +154,44 @@ body {
 }
 
 @media (max-width: 600px) {
-    .para_mobile {
-        display: flex;
-        justify-content: space-between;
-    }
 
     #btn_mobile {
         display: block;
     }
 
     #menu.active .menu_lista {
-        display: block;
+        height: calc( 40vh - 123px);
+        visibility: visible;
     }
 
     .menu_lista {
-        display: none;
+        display: flex;
         position: absolute;
         width: 100%;
+        height: 0;
+        transition: .6s;
+        border-bottom: 2px solid var(--cor-secundaria);
         top: 123px;
         right: 0;
         background: black;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
     }
 
     .menu_lista a {
-        padding: 16px 0;
-        margin: 0 16px;
+        display: block;
+        padding: 16px 24px;
+    }
+
+    .menu_lista a::after {
+        background: none;
+    }
+
+    .menu_lista a:hover{
+        background: #FFA700;
+        color: black;
+
     }
 }
 
